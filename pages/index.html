@@ -9,47 +9,231 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+    <div class="container">
+      <h1 class="index-title">我是首頁</h1>
+      <div class="card" style="width: 18rem">
+        <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
+        <div class="card-body">
+          <h5 class="card-title">卡片元件</h5>
+          <p class="card-text fs-3 fs-md-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            odit, iusto odio assumenda alias id nobis earum!
+          </p>
+        </div>
       </div>
-    </div>
+      <!-- Modal 按鈕 -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        打開 modal
+      </button>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+      <!-- Modal 元件 -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">內容</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                關閉
+              </button>
+              <button type="button" class="btn btn-primary">確定</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+    <section class="lessonCategory py-c4 py-md-c8 px-c2">
+      <div class="roundBoard-wrapper-lg">
+        <div class="container">
+          <div
+            class="row d-flex flex-column flex-md-row-reverse align-items-center"
+          >
+            <div class="col-md-5 ms-auto mb-c4 mb-md-0">
+              <div class="d-flex flex-column flex-md-row">
+                <img
+                  src="../assets/images/deco/polygon-1.png"
+                  alt="deco-polygon"
+                  class="align-self-start mb-2"
+                />
+                <div class="d-flex flex-column">
+                  <h2 class="text-light">想學什麼嗎？</h2>
+                  <h2 class="text-light">一探究竟。</h2>
+                  <img src="../assets/images/deco/line-2.png" alt="deco-line" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="row d-flex flex-nowrap flex-md-wrap overflow-x-scroll gy-4 mb-4"
+              >
+                <!-- 網路行銷 -->
+                <div class="col-md-6">
+                  <div class="roundBoard-wrapper-sm h-100">
+                    <div class="d-flex">
+                      <a
+                        href="#"
+                        class="webMarketing p-3 me-c3 align-self-start"
+                      >
+                        <img
+                          src="../assets/images/icons/megaphoneSimple.png"
+                          alt=""
+                        />
+                      </a>
+                      <div class="d-flex flex-column">
+                        <p class="course-title">網路行銷</p>
+                        <p class="subTitle">342 門課程</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 拍攝剪輯 -->
+                <div class="col-md-6">
+                  <div class="roundBoard-wrapper-sm h-100">
+                    <div class="d-flex">
+                      <a
+                        href="#"
+                        class="FilmCutting p-3 me-c3 align-self-start"
+                      >
+                        <img src="../assets/images/icons/camera.png" alt="" />
+                      </a>
+                      <div class="d-flex flex-column">
+                        <p class="course-title">拍攝剪輯</p>
+                        <p class="subTitle">563 門課程</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 自我成長 -->
+                <div class="col-md-6">
+                  <div class="roundBoard-wrapper-sm h-100">
+                    <div class="d-flex">
+                      <a
+                        href="#"
+                        class="selfPromoting p-3 me-c3 align-self-start"
+                      >
+                        <img
+                          src="../assets/images/icons/chartBarHorizontal.png"
+                          alt=""
+                        />
+                      </a>
+                      <div class="d-flex flex-column">
+                        <p class="course-title">自我成長</p>
+                        <p class="subTitle">490 門課程</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 藝術設計 -->
+                <div class="col-md-6">
+                  <div class="roundBoard-wrapper-sm h-100">
+                    <div class="d-flex">
+                      <a href="#" class="artDesign p-3 me-c3 align-self-start">
+                        <img src="../assets/images/icons/penNib.png" alt="" />
+                      </a>
+                      <div class="d-flex flex-column">
+                        <p class="course-title">藝術設計</p>
+                        <p class="subTitle">230 門課程</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row d-flex flex-nowrap flex-md-wrap overflow-x-scroll gy-4"
+              >
+                <!-- 數據分析 -->
+                <div class="col-md-6">
+                  <div class="roundBoard-wrapper-sm h-100">
+                    <div class="d-flex">
+                      <a
+                        href="#"
+                        class="dataAnalysis p-3 me-c3 align-self-start"
+                      >
+                        <img src="../assets/images/icons/bugDroid.png" alt="" />
+                      </a>
+                      <div class="d-flex flex-column">
+                        <p class="course-title">數據分析</p>
+                        <p class="subTitle">395 門課程</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 投資理財 -->
+                <div class="col-md-6">
+                  <div class="roundBoard-wrapper-sm h-100">
+                    <div class="d-flex">
+                      <a href="#" class="investment p-3 me-c3 align-self-start">
+                        <img
+                          src="../assets/images/icons/creditCard.png"
+                          alt=""
+                        />
+                      </a>
+                      <div class="d-flex flex-column">
+                        <p class="course-title">投資理財</p>
+                        <p class="subTitle">486 門課程</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 音樂創作 -->
+                <div class="col-md-6">
+                  <div class="roundBoard-wrapper-sm h-100">
+                    <div class="d-flex">
+                      <a href="#" class="music p-3 me-c3 align-self-start">
+                        <img
+                          src="../assets/images/icons/headphones.png"
+                          alt=""
+                        />
+                      </a>
+                      <div class="d-flex flex-column">
+                        <p class="course-title">音樂創作</p>
+                        <p class="subTitle">283 門課程</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 探索更多 -->
+                <div class="col-md-6">
+                  <div class="roundBoard-wrapper-sm h-100 h-100">
+                    <div class="d-flex">
+                      <a href="#" class="explore p-3 me-c3 align-self-start">
+                        <img src="../assets/images/icons/arrow.png" alt="" />
+                      </a>
+                      <div class="d-flex flex-column justify-content-center">
+                        <p class="course-title">探索更多</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

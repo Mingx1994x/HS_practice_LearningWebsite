@@ -1,4 +1,46 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  padding: 100px 0px;
+  background-color: #282828;
+
+  @include media-breakpoint-down(md) {
+    padding: 48px 12px;
+  }
+
+  .footer-logo {
+    width: 200px;
+    height: 32px;
+  }
+
+  .rounded-SocialIcon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $light;
+    border-radius: 50%;
+  }
+
+  a {
+    color: $light
+  }
+
+  .footer-nav {
+    a:hover {
+      color: $primary-60;
+    }
+
+  }
+
+  a.facebookIcon:hover {
+    color: $primary
+  }
+
+  a.lineIcon:hover {
+    color: $success
+  }
+
+  a.youtubeIcon:hover {
+    color: $danger
+  }
+
 }

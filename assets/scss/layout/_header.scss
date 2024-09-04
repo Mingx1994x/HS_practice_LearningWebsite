@@ -1,4 +1,42 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+h1 {
+  margin-bottom: 0;
+
+  &>.logo {
+    display: block;
+    width: 200px;
+    height: 32px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @include media-breakpoint-down(md) {
+      width: 125px;
+      height: 20px;
+    }
+  }
+}
+
+.navbar {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.exploreMenu.dropdown {
+  .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    color: $secondary;
+    padding: 12px 12px 12px 24px;
+    border-radius: $border-radius-lg;
+
+    &:hover {
+      background-color: $primary;
+      color: $light;
+    }
+  }
 }

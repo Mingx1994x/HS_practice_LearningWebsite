@@ -1,3 +1,63 @@
-.index-title {
-  font-size: 100px;
+.roundBoard-wrapper-lg {
+  max-width: 1656px;
+  background-color: $primary;
+  border-radius: 80px;
+  padding: 80px 180px;
+  margin: 0 auto;
+
+  @include media-breakpoint-down(md) {
+    border-radius: 40px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}
+
+.roundBoard-wrapper-sm {
+  background-color: $light;
+  border-radius: 20px;
+  padding: 20px;
+
+  a {
+    border-radius: $border-radius-xl;
+
+    &.webMarketing {
+      background-color: #FF994F;
+    }
+
+    &.FilmCutting {
+      background-color: #5E5E5E;
+    }
+
+    &.selfPromoting {
+      background-color: #FF9BAD;
+    }
+
+    &.artDesign {
+      background-color: #564FFD;
+    }
+
+    &.dataAnalysis {
+      background-color: #54DFF2;
+    }
+
+    &.investment {
+      background-color: #52E9BC;
+    }
+
+    &.music {
+      background-color: #CF93FF;
+    }
+
+    &.explore {
+      background-color: $primary;
+    }
+  }
+
+  .courseTitle {
+    color: #1D2026;
+  }
+
+  .subTitle {
+    color: #6E7485;
+  }
 }
