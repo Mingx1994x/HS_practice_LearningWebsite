@@ -1,0 +1,15 @@
+// background
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-linearGradient-primary-light {
+    background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
+}
+
+// object
+.object-position-center-top {
+    object-position: center top;
+}

@@ -1,223 +1,575 @@
-<div class="container">
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <div class="d-flex align-items-center w-100">
-        <h1>
-          <a
-            href="./index.html"
-            style="background-image: url(../assets/images/logo.png)"
-            target="_self"
-            class="logo bg-cover"
-            >learning線上課程網站</a
-          >
-        </h1>
-        <div class="exploreMenu dropdown d-none d-lg-block">
-          <a
-            class="btn dropdown-toggle border-0"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            探索
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <p class="py-c2 ps-4 pe-c2 mb-2">探索全部</p>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>音樂</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>攝影</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>程式</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>藝術</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>人文</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>行銷</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>投資理財</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>心靈成長</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>職場技能</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#"
-                ><p>生活品味</p>
-                <i class="bi bi-chevron-right"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <form class="d-flex d-none d-lg-block" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        <div class="d-flex ms-auto">
-          <button type="button" class="btn position-relative px-1 py-0">
-            <i class="bi bi-bell"></i>
-            <span
-              class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle"
-            >
-              <span class="visually-hidden">New alerts</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="btn position-relative px-1 py-0 ms-0 ms-md-3"
-          >
-            <i class="bi bi-cart2"></i>
-            <span
-              class="position-absolute top-25 start-50 badge rounded-circle bg-primary px-1 py-0"
-            >
-              2
-              <!-- <span class="visually-hidden"></span> -->
-            </span>
-          </button>
-          <button
-            class="navbar-toggler border-0 fs-6 p-2 ms-0 ms-md-3"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarMenu"
-            aria-controls="navbarMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-      <!-- <div
-        class="offcanvas offcanvas-top show ms-0 ms-md-3"
-        tabindex="-1"
-        id="navbarMenu"
-        aria-labelledby="offcanvasTopLabel"
-      >
-        <div class="offcanvas-header px-4">
-          <p class="offcanvas-title ps-4 py-c2" id="offcanvasTopLabel">
-            探索全部
-          </p>
-          <div class="d-flex d-none">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Active</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="offcanvas-body">
-          <div class="tab-content" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="pills-explore"
-              role="tabpanel"
-              aria-labelledby="pills-explore-tab"
-              tabindex="0"
-            >
-              <div class="dropdown dropend mt-2">
-                <button
-                  class="btn dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                >
-                  Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-profile"
-              role="tabpanel"
-              aria-labelledby="pills-profile-tab"
-              tabindex="0"
-            >
-              會員
-            </div>
-          </div>
-        </div>
-        <ul class="navbar-nav d-flex flex-column align-items-center">
-          <li class="nav-item dropdown d-none">
+<header class="my-0 mt-lg-c4 mb-lg-3">
+  <div class="container-lg container-device-sm">
+    <nav
+      class="navbar navbar-expand-lg bg-light rounded-0 rounded-lg-pill py-c2 py-lg-3"
+    >
+      <div class="container-fluid">
+        <div class="d-flex align-items-center w-100 pe-1 px-lg-c4">
+          <h1>
             <a
-              class="nav-link dropdown-toggle"
+              href="./index.html"
+              style="background-image: url(../assets/images/logo.png)"
+              target="_self"
+              class="logo bg-cover"
+              >learning線上課程網站</a
+            >
+          </h1>
+          <div class="dropdown position-static d-none d-lg-block">
+            <a
+              class="btn dropdown-toggle border-0"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <div class="d-flex align-items-center">
-                <img src="../assets/images/avatar-1.png" alt="" />
-                <p>Jessica</p>
-              </div>
+              探索
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-light bg-primary rounded-3" href="#"
-              >登入 / 註冊</a
+            <div class="dropdown-exploreMenu dropdown-menu">
+              <div class="d-flex">
+                <!-- firstLayer dropdown menu -->
+                <ul class="subLayer-menu firstLayer list-unstyled p-c2">
+                  <li>
+                    <p class="py-c2 ps-4 pe-c2 mb-2">探索全部</p>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>音樂</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>攝影</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item open" href="#"
+                      ><p>程式</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>程式</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>藝術</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>人文</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>行銷</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>投資理財</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>心靈成長</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>職場技能</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>生活品味</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                </ul>
+                <!-- secondLayer dropdown menu -->
+                <ul
+                  class="subLayer-menu secondLayer list-unstyled p-c2 codeMenu d-none"
+                >
+                  <li>
+                    <p class="py-c2 ps-4 pe-c2 mb-2">所有程式</p>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>程式入門</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item open" href="#"
+                      ><p>網頁前端</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>網頁後端</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>網站架設</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>資訊安全</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>資訊安全</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>遊戲開發</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>資料科學</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>人工智慧</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><p>量化分析</p>
+                      <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </li>
+                </ul>
+                <!-- thirdLayer dropdown menu -->
+                <ul
+                  class="subLayer-menu thirdLayer list-unstyled p-c2 frontEndMenu d-none"
+                >
+                  <li>
+                    <div class="d-flex p-c2">
+                      <img
+                        src="../assets/images/icons/ic_fire.png"
+                        alt="icon_fire"
+                        style="height: 24px; width: 24px"
+                      />
+                      <p class="ms-2">熱門網頁前端課程</p>
+                    </div>
+                  </li>
+                  <li class="px-c2"><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item p-c2" href="#">
+                      <div class="d-flex align-items-start">
+                        <div class="flex-shrink-0 position-relative">
+                          <img
+                            src="../assets//images//course-5.png"
+                            alt="course-5"
+                            style="height: 100px; width: 100px"
+                            class="rounded-3"
+                          />
+                          <span
+                            class="discount-80-badge fs-7 text-danger bg-danger-10 rounded-pill py-1 px-2"
+                            >8 折</span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <h4 class="fw-medium mb-3 fs-6">
+                            小白也會！從零開始學習 Python 程式設計
+                          </h4>
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <img
+                                src="../assets/images/avatar-2.png"
+                                alt=""
+                                class="object-fit-cover me-2"
+                              />
+                              <p>Kelly Hsu</p>
+                            </div>
+
+                            <p class="text-primary fw-medium text-end">
+                              NT$ 2,480 <br /><span
+                                class="text-secondary-60 fs-8 text-decoration-line-through"
+                              >
+                                NT$ 3,200
+                              </span>
+                            </p>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <p class="fs-7">已有 420 位同學加入</p>
+                            <p class="fs-7 text-end">
+                              <span class="text-warning"
+                                ><i class="bi bi-star-fill"></i
+                              ></span>
+                              4.0<span class="text-secondary-60">(333)</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-c2"><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item p-c2" href="#">
+                      <div class="d-flex align-items-start">
+                        <div class="flex-shrink-0 position-relative">
+                          <img
+                            src="../assets//images//course-5.png"
+                            alt="course-5"
+                            style="height: 100px; width: 100px"
+                            class="rounded-3"
+                          />
+                          <span
+                            class="img-badge-4-4 fs-7 text-danger bg-danger-10 rounded-pill py-1 px-2"
+                            >8 折</span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <h4 class="fw-medium mb-3 fs-6">
+                            小白也會！從零開始學習 Python 程式設計
+                          </h4>
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <img
+                                src="../assets/images/avatar-2.png"
+                                alt=""
+                                class="object-fit-cover me-2"
+                              />
+                              <p>Kelly Hsu</p>
+                            </div>
+
+                            <p class="text-primary fw-medium text-end">
+                              NT$ 2,480 <br /><span
+                                class="text-secondary-60 fs-8 text-decoration-line-through"
+                              >
+                                NT$ 3,200
+                              </span>
+                            </p>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <p class="fs-7">已有 420 位同學加入</p>
+                            <p class="fs-7 text-end">
+                              <span class="text-warning"
+                                ><i class="bi bi-star-fill"></i
+                              ></span>
+                              4.0<span class="text-secondary-60">(333)</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-c2"><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item p-c2" href="#">
+                      <div class="d-flex align-items-start">
+                        <div class="flex-shrink-0 position-relative">
+                          <img
+                            src="../assets//images//course-5.png"
+                            alt="course-5"
+                            style="height: 100px; width: 100px"
+                            class="rounded-3"
+                          />
+                          <span
+                            class="discount-80-badge fs-7 text-danger bg-danger-10 rounded-pill py-1 px-2"
+                            >8 折</span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <h4 class="fw-medium mb-3 fs-6">
+                            小白也會！從零開始學習 Python 程式設計
+                          </h4>
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <img
+                                src="../assets/images/avatar-2.png"
+                                alt=""
+                                class="object-fit-cover me-2"
+                              />
+                              <p>Kelly Hsu</p>
+                            </div>
+
+                            <p class="text-primary fw-medium text-end">
+                              NT$ 2,480 <br /><span
+                                class="text-secondary-60 fs-8 text-decoration-line-through"
+                              >
+                                NT$ 3,200
+                              </span>
+                            </p>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <p class="fs-7">已有 420 位同學加入</p>
+                            <p class="fs-7 text-end">
+                              <span class="text-warning"
+                                ><i class="bi bi-star-fill"></i
+                              ></span>
+                              4.0<span class="text-secondary-60">(333)</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <form
+            class="searchForm d-none d-lg-block position-relative"
+            role="search"
+          >
+            <span
+              class="position-absolute top-50 start-0 translate-middle-y ms-2"
+              ><i class="bi bi-search"></i
+            ></span>
+            <input
+              class="form-control border-1 border-secondary-40 rounded-3 ps-c4 py-c3"
+              type="search"
+              placeholder="搜尋各種音樂、數學、程式及設計課程"
+              aria-label="搜尋各種音樂、數學、程式及設計課程"
+            />
+            <button
+              class="btn btn-primary position-absolute top-50 end-0 translate-middle-y me-2"
+              type="submit"
             >
-          </li>
-        </ul>
-      </div> -->
-    </div>
-  </nav>
-</div>
+              搜尋
+            </button>
+          </form>
+          <div class="d-flex ms-auto">
+            <!-- notification -->
+            <div class="dropdown position-static align-self-center">
+              <button
+                type="button"
+                class="btn position-relative px-1 py-0"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-bell"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle"
+                >
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </button>
+              <ul class="notifyMenu dropdown-menu py-0">
+                <li class="d-flex justify-content-end">
+                  <a class="dropdown-item-text text-primary py-c2" href="#"
+                    ><i class="bi bi-check-circle-fill"></i>全部標記為已讀</a
+                  >
+                </li>
+                <li class="unread">
+                  <a
+                    href="#"
+                    class="dropdown-item d-flex align-items-center py-c2"
+                  >
+                    <div class="bg-info-10 text-info rounded-circle me-3">
+                      <span class="material-symbols-outlined fs-6 p-2">
+                        campaign
+                      </span>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <p>系統通知：6 月 30 日 02:00 網站系統排程更新</p>
+                      <p class="text-secondary-60">4 天前</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="read">
+                  <a
+                    href="#"
+                    class="dropdown-item d-flex align-items-center py-c2"
+                  >
+                    <div class="bg-danger-10 text-danger rounded-circle me-3">
+                      <span class="material-symbols-outlined fs-6 p-2">
+                        notifications_active
+                      </span>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <p>
+                        募資開課：您購買的募資課程已成功開課！將於 3
+                        天後公布課綱！
+                      </p>
+                      <p class="text-secondary-60">7 天前</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="unread">
+                  <a href="#" class="dropdown-item d-flex align-items-center">
+                    <div class="bg-danger-10 text-danger rounded-circle me-3">
+                      <span class="material-symbols-outlined fs-6 p-2">
+                        notifications_active
+                      </span>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <p>
+                        募資開課：您購買的募資課程已成功開課！將於 3
+                        天後公布課綱！
+                      </p>
+                      <p class="text-secondary-60">11 天前</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- cart -->
+            <a
+              href="#"
+              role="button"
+              class="btn align-self-center position-relative px-1 py-0 ms-0 ms-md-3"
+            >
+              <i class="bi bi-cart2"></i>
+              <span
+                class="position-absolute top-25 start-50 badge rounded-circle bg-primary px-1 py-0"
+              >
+                2
+                <span class="visually-hidden">2</span>
+              </span>
+            </a>
+            <button
+              class="navbar-toggler border-0 fs-6 p-2 ms-0 ms-md-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-top ms-0 ms-md-3"
+              tabindex="-1"
+              id="navbarMenu"
+              aria-labelledby="offcanvasTopLabel"
+            >
+              <div class="offcanvas-header px-4">
+                <p class="offcanvas-title ps-4 py-c2" id="offcanvasTopLabel">
+                  探索全部
+                </p>
+                <!-- <div class="d-flex d-none">
+                  <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Active</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                  </ul>
+                </div> -->
+              </div>
+              <div class="offcanvas-body">
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- <div
+                    class="tab-pane fade show active"
+                    id="pills-explore"
+                    role="tabpanel"
+                    aria-labelledby="pills-explore-tab"
+                    tabindex="0"
+                  >
+                    <div class="dropdown dropend mt-2">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                      >
+                        Dropdown button
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div> -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                    tabindex="0"
+                  >
+                    會員
+                  </div>
+                </div>
+              </div>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown d-none" id="memberBtn">
+                  <a
+                    class="member-btn nav-link p-0"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../assets/images/avatar-1.png"
+                        alt=""
+                        class="object-fit-cover me-2"
+                      />
+                      <p>Jessica</p>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="nav-item px-4 py-c2 ps-md-3 pe-md-0 py-md-0"
+                  id="loginBtn"
+                >
+                  <a
+                    class="nav-link link-light btn bg-primary py-3 px-c4-1 text-center"
+                    href="#"
+                    >登入 / 註冊</a
+                  >
+                </li>
+                <li class="nav-item d-none px-4 py-c2">
+                  <a class="nav-link px-4 py-c2" href="#"
+                    ><i class="bi bi-box-arrow-right me-2"></i>登出</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

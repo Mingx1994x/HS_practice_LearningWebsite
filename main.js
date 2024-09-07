@@ -9,4 +9,7 @@ import 'swiper/css/pagination';
 // import Swiper JS
 import './assets/js/customSwiper';
 
+// script
+import './assets/js/state'
+
 console.log("Hello world!");

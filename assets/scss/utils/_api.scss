@@ -1,6 +1,4 @@
 // font-size RWD
 $utilities: map-merge($utilities,
-        ("font-size": map-merge(map-get($utilities, "font-size"),
-                (responsive: true,
-                )),
-        ));
+		("font-size": map-merge(map-get($utilities, "font-size"), (responsive: true, )),
+			"rounded": map-merge(map-get($utilities, "rounded"), (responsive: true, ))));

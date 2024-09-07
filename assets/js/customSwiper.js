@@ -1,18 +1,58 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 // init Swiper:
-const swiper = new Swiper('.bannerSwiper', {
-    // configure Swiper to use modules
-    modules: [Navigation, Pagination],
-    slidesPerView: 3,
-    spaceBetween: 30,
+const cardSwiper1 = new Swiper(".cardSwiper1", {
+    modules: [Pagination, Autoplay],
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+        delay: 2000
+    },
+    pagination: {
+        // el: ".swiper-pagination",
+        el: ".cardSwiper1-pagination",
+        clickable: true
+
+    },
+});
+
+const cardSwiper2 = new Swiper(".cardSwiper2", {
+    modules: [Navigation, Autoplay],
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+        delay: 2000
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+            navigation: {
+                nextEl: ".cardSwiper2-next",
+                prevEl: ".cardSwiper2-prev",
+            },
+        }
+    }
+});
+
+const cardSwiper3 = new Swiper(".bannerSwiper", {
+    modules: [Navigation, Autoplay, Pagination],
+    slidesPerView: 1,
+    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".bannerSwiper-next",
+        prevEl: ".bannerSwiper-prev",
     },
+    breakpoints: {
+        1400: {
+            slidesPerView: 1.2,
+            spaceBetween: 40,
+            centeredSlides: true
+        }
+    }
 });
