@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+  </head>
+  <body>
+    <div class="d-flex align-items-center">
+      <div class="flex-xl-grow-1 d-none d-xl-block">
+        <div class="p-c4">
+          <div class="slogan d-flex flex-column justify-content-center">
+            <a href="./index.html">
+              <img
+                src="../assets/images/login.png"
+                alt="Learning login"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grow-0 ms-auto" style="width: 1140px">
+        <div class="py-c5">
+          <div class="container-xl">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-6">
+                <h2 class="fs-2 fs-lg-1 fw-semibold mb-4 mb-lg-c4">
+                  歡迎加入 Learning
+                </h2>
+                <div class="d-flex flex-column mb-4 mb-lg-c4">
+                  <button
+                    type="button"
+                    data-icon="Google"
+                    class="social-loginBtn btn btn-outline-secondary-40 text-secondary position-relative py-3 mb-3"
+                  >
+                    使用 Google 帳號登入
+                  </button>
+                  <button
+                    type="button"
+                    data-icon="Facebook"
+                    class="social-loginBtn btn btn-outline-secondary-40 text-secondary position-relative py-3 mb-3"
+                  >
+                    使用 Facebook 帳號登入
+                  </button>
+                  <button
+                    type="button"
+                    data-icon="Apple"
+                    class="social-loginBtn btn btn-outline-secondary-40 text-secondary position-relative py-3"
+                  >
+                    使用 Apple 帳號登入
+                  </button>
+                </div>
+                <form action="" class="d-flex flex-column mb-4 mb-lg-c4">
+                  <div class="d-flex flex-column mb-4 mb-lg-c4">
+                    <p class="text-dark fw-semibold mb-3">
+                      或使用 Learning 帳號註冊
+                    </p>
+                    <div class="mb-3">
+                      <label for="userEmail" class="form-label me-1"
+                        >電子信箱<span class="text-danger ms-1">*</span></label
+                      >
+                      <input
+                        type="email"
+                        class="form-control p-3"
+                        id="userEmail"
+                        placeholder="請輸入電子信箱"
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="userPassword" class="form-label"
+                        >密碼<span class="text-danger ms-1">*</span></label
+                      >
+                      <div class="position-relative">
+                        <input
+                          class="form-control p-3"
+                          id="userPassword"
+                          aria-required="true"
+                          type="password"
+                          placeholder="請輸入密碼"
+                        />
+                        <button
+                          class="btn position-absolute top-0 end-0 d-none"
+                          id="hiddenPassword"
+                        >
+                          <img
+                            src="../assets/images/icons/ic_eye_close.png"
+                            alt=""
+                            style="height: 20px; width: 20px"
+                          />
+                        </button>
+                        <button
+                          class="btn position-absolute top-0 end-0 d-none"
+                          id="showPassword"
+                        >
+                          <img
+                            src="../assets/images/icons/ic_eye-open.png"
+                            alt=""
+                            style="height: 20px; width: 20px"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <label for="passwordCheck" class="form-label"
+                        >密碼<span class="text-danger ms-1">*</span></label
+                      >
+                      <div class="position-relative">
+                        <input
+                          class="form-control p-3"
+                          id="passwordCheck"
+                          aria-required="true"
+                          type="password"
+                          placeholder="請再輸入一次密碼"
+                        />
+                        <button
+                          class="btn position-absolute top-0 end-0 d-none"
+                          id="hiddenPwdCheck"
+                        >
+                          <img
+                            src="../assets/images/icons/ic_eye_close.png"
+                            alt=""
+                            style="height: 20px; width: 20px"
+                          />
+                        </button>
+                        <button
+                          class="btn position-absolute top-0 end-0 d-none"
+                          id="showPwdCheck"
+                        >
+                          <img
+                            src="../assets/images/icons/ic_eye-open.png"
+                            alt=""
+                            style="height: 20px; width: 20px"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-secondary-40 mb-3"
+                    disabled
+                  >
+                    立即註冊
+                  </button>
+                  <div class="d-flex">
+                    <p>
+                      建立帳號即表示您同意我們的<a
+                        href="#"
+                        class="link-secondary text-decoration-underline"
+                        >服務條款</a
+                      >及<a
+                        href="#"
+                        class="link-secondary text-decoration-underline"
+                        >隱私權政策</a
+                      >
+                    </p>
+                  </div>
+                </form>
+                <div class="d-flex">
+                  <p class="me-2">已經有 Learning 帳號了嗎？</p>
+                  <a
+                    href="./login.html"
+                    class="link-primary text-decoration-underline"
+                    >立即登入</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

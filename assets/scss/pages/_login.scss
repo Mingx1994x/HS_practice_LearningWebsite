@@ -1,0 +1,26 @@
+.social-loginBtn {
+    &::before {
+        content: '';
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 50%;
+        left: 24px;
+        transform: translate(-50%, -50%);
+    }
+
+    &[data-icon="Google"]::before {
+        background-image: url('../images/icons/ic_google.png');
+    }
+
+    &[data-icon="Facebook"]::before {
+        background-image: url('../images/icons/ic_facebook.png');
+    }
+
+    &[data-icon="Apple"]::before {
+        background-image: url('../images/icons/ic_apple.png');
+    }
+}

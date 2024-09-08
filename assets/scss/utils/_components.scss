@@ -1,19 +1,25 @@
 // badge
-.img-badge-4-4 {
-    position: absolute;
-    top: 4px;
-    left: 4px;
+.roundPill-badge {
+    border-radius: 100px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.img-badge-16-16 {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    padding: 8px 12px;
+.roundPill-badge-sm {
     border-radius: 100px;
-    word-wrap: normal;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    word-break: normal;
+.roundPill-badge-oppCornerES {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 80px;
+    padding-left: 120px;
+    padding-right: 80px;
 }
 
 // swiper
@@ -22,40 +28,26 @@
     max-height: 100%;
 }
 
-.cardSwiper1 {
-    border-radius: 20px;
+//cardSwiper1 , cardSwiper3
+// .cardSwiper1,
+// .cardSwiper3 {
+//     // border-radius: 20px;
 
-    .swiper-slider {
-        position: static;
-    }
+//     .swiper-slider {
+//         position: static;
+//     }
 
-    .swiper-pagination-bullets {
-        &.swiper-pagination-horizontal {
-            bottom: -24px;
-            // top: 100%
-            top: auto;
-        }
-    }
-}
+//     .swiper-pagination-bullets {
+//         &.swiper-pagination-horizontal {
+//             bottom: -24px;
+//             // top: 100%
+//             top: auto;
+//         }
+//     }
+// }
 
-.cardSwiper1-pagination {
-    text-align: center;
-    opacity: 1;
-
-    // background: rgba(0, 0, 0, 0.2);
-    .swiper-pagination-bullet {
-        background: $secondary-40;
-    }
-
-    .swiper-pagination-bullet-active {
-        width: 24px;
-        border-radius: 100px;
-        background: $primary;
-    }
-}
-
-//navigation
-// 定位
+//cardSwiper2 
+//navigation 定位
 .cardSwiper2-prev,
 .cardSwiper2-next {
     position: absolute;
@@ -74,6 +66,46 @@
     transform: translateX(50%);
 }
 
+// bannerSwiper 
+.bannerSwiper {
+
+    // overflow: clip;
+    .swiper-slide {
+        background-color: transparent;
+    }
+
+    img {
+        height: 375px;
+        object-fit: cover;
+
+        @include media-breakpoint-up(lg) {
+            height: auto;
+            border-radius: 80px;
+        }
+    }
+
+}
+
+.bannerSwiper-prev,
+.bannerSwiper-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.bannerSwiper-prev {
+    left: 8.3%;
+    transform: translateX(-50%);
+}
+
+.bannerSwiper-next {
+    right: 8.3%;
+    transform: translateX(50%);
+}
+
+
+//navigation 樣式
 .square-rounded-prev,
 .square-rounded-next {
     color: $primary;
@@ -110,33 +142,19 @@
     content: '\e5c8';
 }
 
-.bannerSwiper {
+// pagination樣式
+.pill-rounded-pagination {
+    text-align: center;
+    opacity: 1;
 
-    // overflow: clip;
-    .swiper-slide {
-        background-color: transparent;
+    // background: rgba(0, 0, 0, 0.2);
+    .swiper-pagination-bullet {
+        background: $secondary-40;
     }
 
-    img {
-        border-radius: 80px;
+    .swiper-pagination-bullet-active {
+        width: 24px;
+        border-radius: 100px;
+        background: $primary;
     }
-
-}
-
-.bannerSwiper-prev,
-.bannerSwiper-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.bannerSwiper-prev {
-    left: 8.3%;
-    transform: translateX(-50%);
-}
-
-.bannerSwiper-next {
-    right: 8.3%;
-    transform: translateX(50%);
 }

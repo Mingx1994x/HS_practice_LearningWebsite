@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import './assets/js/customSwiper';
 
 // script
-import './assets/js/state'
+import './assets/js/state';
+import './assets/js/readInput'
 
 console.log("Hello world!");

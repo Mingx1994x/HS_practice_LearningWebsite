@@ -36,7 +36,7 @@ const cardSwiper2 = new Swiper(".cardSwiper2", {
     }
 });
 
-const cardSwiper3 = new Swiper(".bannerSwiper", {
+const bannerSwiper = new Swiper(".bannerSwiper", {
     modules: [Navigation, Autoplay, Pagination],
     slidesPerView: 1,
     loop: true,
@@ -55,4 +55,17 @@ const cardSwiper3 = new Swiper(".bannerSwiper", {
             centeredSlides: true
         }
     }
+});
+
+const cardSwiper3 = new Swiper(".cardSwiper3", {
+    modules: [Pagination, Autoplay],
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+        delay: 2000
+    },
+    pagination: {
+        el: ".cardSwiper3-pagination",
+        clickable: true
+    },
 });
