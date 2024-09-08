@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <script type="module" crossorigin src="/HS_practice_LearningWebsite/assets/main-30e225a7.js"></script>
+    <link rel="stylesheet" href="/HS_practice_LearningWebsite/assets/main-758f873c.css">
+  </head>
+  <body>
+    <div class="d-flex align-items-center">
+      <div class="flex-xl-grow-1 d-none d-xl-block">
+        <div class="p-c4">
+          <div class="slogan d-flex flex-column justify-content-center">
+            <a href="./index.html">
+              <img
+                src="/HS_practice_LearningWebsite/assets/login-ad5387e3.png"
+                alt="Learning login"
+                class="img-fluid"
+              />
+            </a>
+            <!-- <div>
+              <h3 class="fs-1 fw-semibold text-start">你的線上</h3>
+              <h3 class="fs-1 fw-semibold">專屬學習課</h3>
+            </div>
+            <h3 class="fs-1 fw-semibold">隨時隨地、想上就上</h3> -->
+          </div>
+        </div>
+      </div>
+      <div class="flex-grow-0 ms-auto" style="width: 1140px">
+        <div class="py-c5">
+          <div class="container-xl">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-6">
+                <h2 class="fs-2 fs-lg-1 fw-semibold mb-4 mb-lg-c4">
+                  歡迎回來！
+                </h2>
+                <div class="d-flex flex-column mb-4 mb-lg-c4">
+                  <button
+                    type="button"
+                    data-icon="Google"
+                    class="social-loginBtn btn btn-outline-secondary-40 text-secondary position-relative py-3 mb-3"
+                  >
+                    使用 Google 帳號登入
+                  </button>
+                  <button
+                    type="button"
+                    data-icon="Facebook"
+                    class="social-loginBtn btn btn-outline-secondary-40 text-secondary position-relative py-3 mb-3"
+                  >
+                    使用 Facebook 帳號登入
+                  </button>
+                  <button
+                    type="button"
+                    data-icon="Apple"
+                    class="social-loginBtn btn btn-outline-secondary-40 text-secondary position-relative py-3"
+                  >
+                    使用 Apple 帳號登入
+                  </button>
+                </div>
+                <form action="" class="d-flex flex-column mb-4 mb-lg-c4">
+                  <div class="d-flex flex-column mb-4 mb-lg-c4">
+                    <p class="text-dark fw-semibold mb-3">
+                      或使用 Learning 帳號登入
+                    </p>
+                    <div class="mb-3">
+                      <label for="userEmail" class="form-label"
+                        >電子信箱<span class="text-danger ms-1">*</span></label
+                      >
+                      <input
+                        type="email"
+                        class="form-control p-3"
+                        id="userEmail"
+                        placeholder="請輸入電子信箱"
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="position-relative">
+                      <label for="userPassword" class="form-label"
+                        >密碼<span class="text-danger ms-1">*</span></label
+                      >
+                      <input
+                        class="form-control p-3 mb-2"
+                        id="userPassword"
+                        aria-required="true"
+                        type="password"
+                        placeholder="請輸入密碼"
+                      />
+                      <button
+                        class="btn position-absolute top-50 end-0 translate-middle-y d-none"
+                        id="hiddenPassword"
+                      >
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFXSURBVHgB7ZaBbYMwEEV/qw7ACDdCRkg36AbxCNkARugG6QjtBM0GzQbJBmSDFgujUHPAmUBRpf+kryTE/zjjbwuAEEIIIYQQQm7sKpWVzuH72iT34wd+t7THeuyiXkqLqYxMXjn+nlzp42wxOsXo9VlJsDwS7qX14KxFXE+BZjUE85OF2iXubL4hR/8k/FIeMM9EBMONe70ikc1AMS1afqNvjbWzMDZHf1Q0bbRiD8o1QTfv1yDBOKfW+GtUV4w1Gl/Wunap9Bw+B/lCd/bNUerQPWbnlI9RERp30Fd7lNhUKGMc0pbfGsMsuk+hjB3lDfbNswXuarw329Z+nhSDq/SOOodHDPMS/f7ALQIS/XcJOuD3hvc1TujHJfSTTLxfnMGzx4RcL4GgGwcx+LKJPpVHzMcRhiMOC0VhKgXqJ+ijJAk+v3HPqI/NNd92CSGEEEIIIf+YH6UM3xNif2p2AAAAAElFTkSuQmCC"
+                          alt=""
+                          style="height: 20px; width: 20px"
+                        />
+                      </button>
+                      <button
+                        class="btn position-absolute top-50 end-0 translate-middle-y d-none"
+                        id="showPassword"
+                      >
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJCSURBVHgB7VjhVfMwDLzvmyAb4BG6AR4hG9AN6AbxBmSDdgNggsAE6QZlA9gAbJJCn2PJVuqW8vC9d3+SSDpFsuIYKCgoKCj4y/iHfKgsa8uF5bWlGq85vFluLV8sHy2fxmsXAW15b/lq+S7gGkOSPwZl2UEm+mISaXC8cJ8NzgCFoZcpEa6NWgxrQXl2ery3Y+x3OGE1NOg+78b7El8d6CRqZMbtiYItQVckW0s1RAA3eSocD2W5wYmSoMSvGBuNaa/3iE8bg8xJhMS7NUC1jKvGHeLT5g505WqE1xn3wkhHIfEL0OK56eSzB53EgkjiBolQAQeceIeUNx+qBARJxDR8id8FgtURm9B00vh+yzXhVzN+NeGXHRwbyPtvkxikwjSJNuJ7BUHlqsDDBnH0SK+WxjTZGFpMW6nK5RyYJs2hEj6/h78evtbC/4OH3gLB5oCzm/sPkKTNXfQz5SbFHn5fa+ZZfzz3iKOBoGot5IvYt5Es4nXEd2gPxtqEgswdd/WBT034VYzfmvDL2XxizkckVLkY2xkaFBKxDASMbSV6pIvfQr6VEG/bV0QS3GYupRIt5Js5g5kwhIiGsVEYvs6HFdmNwjVjR/00GRwJQzheI8//q6vGPU4kfg9DBHBvdon5oDZ5KeM7a7AO+X7qX4W+RFCIH4vse115dvV4jzvB2+JMh1wG8rkfo8GZoUCfJkjY4QLOSDeQiXZt5CaPxpHIfbyuMfT6FYYv6uHx+ovlM4Y+f8AFHa8XFBQUFPxefABbfhWP1TATPwAAAABJRU5ErkJggg=="
+                          alt=""
+                          style="height: 20px; width: 20px"
+                        />
+                      </button>
+                      <div class="d-flex justify-content-between">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="rememberMe"
+                            checked
+                          />
+                          <label class="form-check-label" for="rememberMe">
+                            記住帳號
+                          </label>
+                        </div>
+                        <a href="#" class="link-secondary">忘記密碼？</a>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-secondary-40" disabled>
+                    立即登入
+                  </button>
+                </form>
+                <div class="d-flex">
+                  <p class="me-2">沒有 Learning 帳號嗎？</p>
+                  <a
+                    href="./register.html"
+                    class="link-primary text-decoration-underline"
+                    >立即註冊</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
